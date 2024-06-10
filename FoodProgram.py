@@ -45,7 +45,7 @@ def generate_report(customer):
 for customer_data in customers_data:
     customer = fc.Customer(*customer_data)
     generate_report(customer)
-    print("\n" + "\n")
+    print("\n")
 
 
 
