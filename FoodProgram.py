@@ -24,7 +24,7 @@ def generate_report(customer):
     print("Address:", customer.get_address())
     print("Email:", customer.get_email())
     print("Phone:", customer.get_phone())
-    print("Member Status", 'Yes' if customer.get_member_status() else 'No'")
+    print("Member Status", 'Yes' if customer.get_member_status() else 'No')
     print("\nOrder Details")
 
     order_total = 0
