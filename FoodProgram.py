@@ -19,12 +19,12 @@ customers_data = [
 
 def generate_report(customer):
     print("Customer Details")
-    print(f"Customer ID: {customer.get_customerid()}")
-    print(f"Name: {customer.get_name()}")
-    print(f"Address: {customer.get_address()}")
-    print(f"Email: {customer.get_email()}")
-    print(f"Phone: {customer.get_phone()}")
-    print(f"Member Status: {'Yes' if customer.get_member_status() else 'No'}")
+    print("Customer ID:", customer.get_customerid())
+    print("Name:", customer.get_name())
+    print("Address:", customer.get_address())
+    print("Email:", customer.get_email())
+    print("Phone:", customer.get_phone())
+    print("Member Status", 'Yes' if customer.get_member_status() else 'No'")
     print("\nOrder Details")
 
     order_total = 0
@@ -45,7 +45,7 @@ def generate_report(customer):
 for customer_data in customers_data:
     customer = fc.Customer(*customer_data)
     generate_report(customer)
-    print("\n" + "-"*40 + "\n")
+    print("\n" + "\n")
 
 
 
